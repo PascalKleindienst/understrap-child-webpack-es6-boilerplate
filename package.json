@@ -1,0 +1,46 @@
+{
+  "name": "understrap-child-webpack-es6-boilerplate",
+  "version": "1.0.0",
+  "description": "Understrap Child Theme Boilerplate with webpack scss and babel es6",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PascalKleindienst/understrap-child-webpack-es6-boilerplate.git"
+  },
+  "keywords": [
+    "wordpress",
+    "bootstrap",
+    "boilerplate",
+    "underscores",
+    "webpack",
+    "babel",
+    "es6"
+  ],
+  "author": "Pascal Kleindienst <mail@pascalkleindienst.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PascalKleindienst/understrap-child-webpack-es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/PascalKleindienst/understrap-child-webpack-es6-boilerplate#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "webpack": "3.8.1"
+  }
+}
