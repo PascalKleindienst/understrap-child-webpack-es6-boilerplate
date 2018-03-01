@@ -1,0 +1,17 @@
+linters:
+  Indentation:
+    enabled: true
+    width: 4
+    severity: error
+
+  PropertySortOrder:
+    enabled: true
+    order: recess
+  
+  IdSelector:
+    enabled: false
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM
+    severity: error
