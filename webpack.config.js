@@ -37,6 +37,10 @@ module.exports = (env) => {
         plugins: [
             CSSExtract,
         ],
+        externals: {
+            jquery: 'jQuery',
+            popper: 'popper.js'
+        },
         devtool: isProduction ? 'source-map' : 'inline-source-map'
     };
 };
