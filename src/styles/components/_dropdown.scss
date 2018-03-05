@@ -1,0 +1,41 @@
+// ==============================================
+// ================== DROPDOWNS =================
+// ==============================================
+// Icon for submenu (only for mobile devies)
+.collapse-icon {
+    @media (min-width: map-get($grid-breakpoints, 'md')) {
+        display: none;
+        visibility: hidden;
+    }
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .625rem 1rem;
+    cursor: pointer;
+
+    &::after { content: '-'; }
+
+    &.collapsed {
+        &::after { content: '+'; }
+    }
+}
+
+// Color for collapse icon
+.navbar-dark {
+    .collapse-icon { color: $navbar-dark-color; }
+}
+
+.navbar-light {
+    .collapse-icon { color: $navbar-light-color; }
+}
+
+// Hide caret on mobile devices
+.dropdown-toggle {
+    &::after {
+        @media (max-width: map-get($grid-breakpoints, 'md')) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}
