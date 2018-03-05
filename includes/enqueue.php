@@ -17,6 +17,6 @@ add_action('wp_enqueue_scripts', function () {
 add_action('wp_enqueue_scripts', function () {
     $theme = wp_get_theme();
     
-    wp_enqueue_style('understrap-child-styles', get_stylesheet_directory_uri() . '/assets/style.css', [], $theme->get('Version'));
+    wp_enqueue_style('understrap-child-styles', get_stylesheet_directory_uri() . '/assets/styles.css', [], $theme->get('Version'));
     wp_enqueue_script('understrap-child-scripts', get_stylesheet_directory_uri() . '/assets/bundle.js', [], $theme->get('Version'), true);
 });
