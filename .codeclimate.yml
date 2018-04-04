@@ -1,0 +1,34 @@
+plugins: 
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  phan:
+    enabled: true
+    config:
+      file_extensions: "php"
+  phpcodesniffer:
+    enabled: true
+    config:
+    	standard: "WordPress"
+  phpmd:
+    enabled: true
+  scss-lint:
+    enabled: true
+  sonar-php:
+    enabled: true
+
+exclude_patterns:
+- "config/"
+- "db/"
+- "dist/"
+- "features/"
+- "**/node_modules/"
+- "script/"
+- "**/spec/"
+- "**/test/"
+- "**/tests/"
+- "Tests/"
+- "**/vendor/"
+- "**/*_test.go"
+- "**/*.d.ts"
