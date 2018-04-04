@@ -10,7 +10,7 @@ plugins:
   phpcodesniffer:
     enabled: true
     config:
-    	standard: "WordPress"
+      standard: "WordPress"
   phpmd:
     enabled: true
   scss-lint:
