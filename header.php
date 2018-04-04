@@ -69,7 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
-						'walker'          => new understrap_child_navwalker(),
+						'walker'          => new Understrap_Child_Navwalker(),
 					]
 				);
 				?>
