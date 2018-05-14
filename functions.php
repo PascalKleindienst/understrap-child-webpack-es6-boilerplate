@@ -13,7 +13,7 @@ require get_stylesheet_directory() . '/includes/enqueue.php';
 /**
  * Theme Setup
  */
-require get_stylesheet_directory() . '/includes/enqueue.php';
+require get_stylesheet_directory() . '/includes/setup.php';
 
 /**
  * Load custom WordPress nav walker.

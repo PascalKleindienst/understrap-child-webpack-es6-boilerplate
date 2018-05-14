@@ -41,11 +41,12 @@ if ( ! class_exists( 'understrap_child_navwalker' ) ) :
 			$indent  = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 			$output .= $this->special_element( $item, $depth );
 
-			if ( $this->is_special() === false ) {
+			if ( $this->is_special( $item, $depth ) === false ) {
 				// Get class names.
 				$classes    = empty( $item->classes ) ? [] : (array) $item->classes;
 				$classes[]  = 'nav-item menu-item-' . $item->ID;
 				$classnames = $this->classnames( $item, $classes, $args, $depth );
+				$icon       = '';
 
 				// remove Font Awesome icon from classes array and save the icon
 				// we will add the icon back in via a <span> below so it aligns with
