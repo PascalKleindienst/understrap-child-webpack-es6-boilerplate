@@ -12,18 +12,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! class_exists( 'understrap_child_navwalker' ) ) :
-	require_once get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 	/**
 	 * Class WP_Bootstrap_Navwalker
 	 * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
 	 * Description: A custom WordPress nav walker class to implement the Bootstrap 4
 	 * navigation style in a custom theme using the WordPress built in menu manager.
-	 * Version: 2.0.4
+	 * Version: 4.1.0
 	 * Author: Edward McIntyre - @twittem
 	 * License: GPL-2.0+
 	 * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 	 */
-	class Understrap_Child_Navwalker extends understrap_WP_Bootstrap_Navwalker {
+	class Understrap_Child_Navwalker extends Understrap_WP_Bootstrap_Navwalker {
 
 		/**
 		 * Open element.
